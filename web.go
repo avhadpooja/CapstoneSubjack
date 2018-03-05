@@ -16,7 +16,8 @@ func main() {
 	b, err := ioutil.ReadFile("file.txt") // just pass the file name
     	if err != nil {
         fmt.Print(err)
-	}
+			}
+			}
 }
 
 func hello(res http.ResponseWriter, req *http.Request) {
