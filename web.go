@@ -18,7 +18,7 @@ func main() {
 }
 
 func hello(res http.ResponseWriter, req *http.Request) {
-	b, err := ioutil.ReadFile("file.txt") // just pass the file name
+	b, err := ioutil.ReadFile("domains.txt") // just pass the file name
     	if err != nil {
         fmt.Print(err)
 			}
