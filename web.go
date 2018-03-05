@@ -22,6 +22,7 @@ func hello(res http.ResponseWriter, req *http.Request) {
     	if err != nil {
         fmt.Print(err)
 			}
-	fmt.Fprintln(res, b)
+	str := string(b)
+	fmt.Fprintln(res, str)
 }
 
