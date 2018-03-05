@@ -57,7 +57,7 @@ func hello(res http.ResponseWriter, req *http.Request) {
     str := string(b) // convert content to a 'string'
 
     fmt.Println(str) // print the content as a 'string'
-}
-	fmt.Fprintln(res, "hello, heroku")
- 
 
+	fmt.Fprintln(res, str)
+ 
+}
