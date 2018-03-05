@@ -33,7 +33,7 @@ func main() {
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		panic(err)
-	
+	}
     /*b, err := ioutil.ReadFile("domains.txt") // just pass the file name
     if err != nil {
         fmt.Print(err)
