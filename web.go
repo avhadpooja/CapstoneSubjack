@@ -13,14 +13,15 @@ func main() {
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		panic(err)
-	b, err := ioutil.ReadFile("file.txt") // just pass the file name
-    	if err != nil {
-        fmt.Print(err)
-			}
+	
 			}
 }
 
 func hello(res http.ResponseWriter, req *http.Request) {
+	b, err := ioutil.ReadFile("file.txt") // just pass the file name
+    	if err != nil {
+        fmt.Print(err)
+			}
 	fmt.Fprintln(res, b)
 }
 
