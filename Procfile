@@ -1,4 +1,3 @@
-web: go-heroku-example
+web: go-heroku-example -addr=":$PORT"
 worker: worker
--port=$PORT
 -public ./cmd/testapp/public -use-x-forwarded-for -silent
