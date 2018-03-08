@@ -63,8 +63,8 @@ if err != nil {
 
 // Write the contents of S3 Object to the file
 n, err := downloader.Download(f, &s3.GetObjectInput{
-    Bucket: aws.String(subdomainsfortakeover),
-    Key:    aws.String(AKIAINLD7EZ6DPIK3HOA),
+    Bucket: aws.String(bucket),
+    Key:    aws.String(key),
 })
 if err != nil {
     return fmt.Errorf("failed to download file, %v", err)
